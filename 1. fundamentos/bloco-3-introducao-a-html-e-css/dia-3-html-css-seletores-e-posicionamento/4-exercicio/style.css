@@ -11,13 +11,13 @@
     text-align: center;
     width: 180px;
     height: 23px;
-    border: 5px solid cyan;
+    border: 5px solid blue;
     padding-bottom: 60px;
     box-sizing: border-box;
 }
 
 .complementar:hover{
-    text-align: center;
+    text-align: orange;
     width: 220px;
     height: 23px;
     border: 5px solid cyan;
@@ -26,7 +26,7 @@
 }
 
 .escura:hover{
-    text-align: center;
+    text-align: green;
     width: 130px;
     height: 23px;
     border: 5px solid cyan;
@@ -35,7 +35,7 @@
 }
 
 .clara:hover{
-    text-align: center;
+    text-align: black;
     width: 110px;
     height: 23px;
     border: 5px solid cyan;
