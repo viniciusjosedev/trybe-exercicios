@@ -1,0 +1,33 @@
+p, h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+div{
+    width: 120px;
+    height: 60px;
+    margin-left: 44%;
+}
+
+.google{
+    width: 59px;
+}
+
+.youtube{
+
+}
+
+li:hover{
+    background-color: cyan;
+}
+
+li:active{
+    color: green;
+}
+
+a:visited{
+    color: purple;
+}
