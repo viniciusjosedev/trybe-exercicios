@@ -6,10 +6,26 @@ a{
     text-decoration: none;
 }
 
-div{
-    width: 120px;
+.ol{
+    width: 300px;
     height: 60px;
+    text-align: left;
     margin-left: 44%;
+}
+
+.ul{
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    margin-left: 42%;
+}
+
+ol{
+    list-style: none;
+}
+
+ul{
+    list-style: none;
 }
 
 .google{
@@ -17,10 +33,14 @@ div{
 }
 
 .youtube{
-
+    width: 70px;
 }
 
-li:hover{
+.site{
+    width: 75px;
+}
+
+.a:hover{
     background-color: cyan;
 }
 
@@ -31,3 +51,4 @@ li:active{
 a:visited{
     color: purple;
 }
+
