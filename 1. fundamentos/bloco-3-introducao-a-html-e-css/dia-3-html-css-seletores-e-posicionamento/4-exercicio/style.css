@@ -1,8 +1,50 @@
+.h3primaria:hover{
+    color: white;
+    background-color: blue;
+    width: 120;
+    height: 23px;
+    box-sizing: content-box;
+}
+
+
+.h3secundaria:hover{
+    color: white;
+    background-color: cyan;
+    width: 120;
+    height: 23px;
+    box-sizing: content-box;
+}
+
+.h3complementar:hover{
+    color: white;
+    background-color: green;
+    width: 120;
+    height: 23px;
+    box-sizing: content-box;
+}
+
+
+.h3escura:hover{
+    color: white;
+    background-color: red;
+    width: 120;
+    height: 23px;
+    box-sizing: content-box;
+}
+
+.h3clara:hover{
+    color: white;
+    background-color: black;
+    width: 120;
+    height: 23px;
+    box-sizing: content-box;
+}
+
 .primaria:hover{
     text-align: center;
     width: 150px;
     height: 23px;
-    border: 5px solid cyan;
+    border: 5px solid blue;
     padding-bottom: 60px;
     box-sizing: border-box;
 }
@@ -11,34 +53,34 @@
     text-align: center;
     width: 180px;
     height: 23px;
-    border: 5px solid blue;
+    border: 5px solid cyan;
     padding-bottom: 60px;
     box-sizing: border-box;
 }
 
 .complementar:hover{
-    text-align: orange;
+    text-align: center;
     width: 220px;
     height: 23px;
-    border: 5px solid cyan;
+    border: 5px solid green;
     padding-bottom: 60px;
     box-sizing: border-box;
 }
 
 .escura:hover{
-    text-align: green;
+    text-align: center;
     width: 130px;
     height: 23px;
-    border: 5px solid cyan;
+    border: 5px solid red;
     padding-bottom: 60px;
     box-sizing: border-box;
 }
 
 .clara:hover{
-    text-align: black;
+    text-align: center;
     width: 110px;
     height: 23px;
-    border: 5px solid cyan;
+    border: 5px solid black;
     padding-bottom: 60px;
     box-sizing: border-box;
 }
