@@ -1,5 +1,6 @@
 .h3primaria:hover{
     color: white;
+    font-style: italic;
     width: 120;
     height: 23px;
     box-sizing: content-box;
@@ -15,7 +16,8 @@
 
 .h3complementar:hover{
     color: white;
-    width: 120;
+    font-style: italic;
+    width: 290px;
     height: 23px;
     box-sizing: content-box;
 }
@@ -29,6 +31,7 @@
 }
 
 .h3clara:hover{
+    font-style: italic;
     color: white;
     width: 120;
     height: 23px;
@@ -58,7 +61,7 @@
 .complementar:hover{
     background-color: green;
     text-align: center;
-    width: 220px;
+    width: 300px;
     height: 23px;
     border: 5px solid green;
     padding-bottom: 60px;
