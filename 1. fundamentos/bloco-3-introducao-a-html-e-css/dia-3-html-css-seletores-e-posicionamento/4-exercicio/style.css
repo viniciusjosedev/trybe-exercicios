@@ -1,0 +1,45 @@
+.primaria:hover{
+    text-align: center;
+    width: 150px;
+    height: 23px;
+    border: 5px solid cyan;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.secundaria:hover{
+    text-align: center;
+    width: 180px;
+    height: 23px;
+    border: 5px solid cyan;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.complementar:hover{
+    text-align: center;
+    width: 220px;
+    height: 23px;
+    border: 5px solid cyan;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.escura:hover{
+    text-align: center;
+    width: 130px;
+    height: 23px;
+    border: 5px solid cyan;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.clara:hover{
+    text-align: center;
+    width: 110px;
+    height: 23px;
+    border: 5px solid cyan;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
