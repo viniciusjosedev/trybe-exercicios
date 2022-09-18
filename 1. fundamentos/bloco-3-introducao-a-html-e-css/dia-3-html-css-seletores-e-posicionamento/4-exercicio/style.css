@@ -9,3 +9,12 @@
 .impar{
     text-transform:uppercase;
 }
+
+.titulo{
+    color: red;
+}
+
+.italico{
+    font-size: 40px;
+    border: 1px solid black;
+}
