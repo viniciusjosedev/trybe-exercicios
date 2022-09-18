@@ -33,3 +33,37 @@ li{
     background-color: pink;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.stackoverflow:hover{
+    width: 160px;
+    color: orange;
+    font-weight: bold;
+}
+
+.w3schools:hover{
+    width: 160px;
+    color: green;
+    font-weight: bold;
+}
+
+.mdnwebdocs:hover{
+    width: 200px;
+    color: black;
+    font-weight: bold;
+}
+
+.devdocs:hover{
+    width: 160px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.trybe:hover{
+    width: 160px;
+    color: green;
+    font-weight: bold;
+}
