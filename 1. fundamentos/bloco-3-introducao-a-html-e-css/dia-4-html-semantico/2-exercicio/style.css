@@ -1,10 +1,62 @@
-.header{
-    background-color: red;
-}
-.nav{
+*{
 
+}
+
+
+.header{
+    background-color: green;
+    box-sizing: border-box;
+}
+
+h1{
+
+    text-align: center;
+    height: 0px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 40px;
 }
 
 .list-header{
     list-style-type: none;
+    background-color: blue;
+    height: 30px;
 }
+
+.li-pagina-inicial{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 250px;
+    padding-top: 3px;
+}
+
+.li-sobre{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 200px;
+    padding-top: 3px;
+}
+
+.li-contato{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 200px;
+    padding-top: 3px;
+}
+
+.list-link{
+    color: white;
+    text-decoration: none;
+}
+
+.main{
+    background-color: red;
+    margin-top: 0px;
+    margin-left: 0;
+}
+
+h2{
+    margin-left: 35%;
+}
+
