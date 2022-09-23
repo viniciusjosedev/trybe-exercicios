@@ -58,6 +58,6 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 lista = [1,]
 for (i=1; i==25; i+=1){
-	lista.push(i)
+	lista.push(i);
 }
 console.log(lista)
