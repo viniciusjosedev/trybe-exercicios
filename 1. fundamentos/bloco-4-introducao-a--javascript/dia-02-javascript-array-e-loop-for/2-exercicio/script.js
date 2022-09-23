@@ -56,8 +56,21 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 // console.log(num)
 
-lista = [1,]
-for (i=1; i==25; i+=1){
-	lista.push(i);
+// a = 25
+// let lista = []
+// for(i=1; i<=a; i+=1){
+// 	lista.push(i)
+// }
+// console.log(lista)
+
+division = []
+let lista = []
+for(i=1; i<=25; i+=1){
+	lista.push(i)
+	if(i===25){
+		for (a=0; a<lista.length; a+=1){
+			division.push(lista[a]/2)
+		}
+	}
 }
-console.log(lista)
+console.log(division)
