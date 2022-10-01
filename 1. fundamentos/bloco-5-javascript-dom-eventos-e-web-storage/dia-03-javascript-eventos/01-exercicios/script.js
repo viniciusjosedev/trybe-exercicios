@@ -42,10 +42,15 @@ function days() {
 		if (i == parseInt('24') || i == parseInt('25') || i == parseInt('31')) {
 			document.getElementsByClassName('day')[i+1].className += ' holiday';
 
+		}
+	
 	}
-
-
-}
+	// Implementando botões.
+	let buttom = document.createElement('button') 
+	buttom.innerText = 'Feriados'
+	buttom.className = 'Feriados'
+	buttom.id = 'btn-holiday'
+	document.getElementsByClassName("buttons-container")[0].appendChild(buttom)
 }
 
 
