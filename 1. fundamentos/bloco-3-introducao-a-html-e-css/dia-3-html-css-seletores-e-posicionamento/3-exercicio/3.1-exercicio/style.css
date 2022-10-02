@@ -1,0 +1,54 @@
+p, h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ol{
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    margin-left: 44%;
+}
+
+.ul{
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    margin-left: 42%;
+}
+
+ol{
+    list-style: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.google{
+    width: 59px;
+}
+
+.youtube{
+    width: 70px;
+}
+
+.site{
+    width: 75px;
+}
+
+.a:hover{
+    background-color: cyan;
+}
+
+li:active{
+    color: green;
+}
+
+a:visited{
+    color: purple;
+}
+

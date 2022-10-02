@@ -1,0 +1,90 @@
+.h3primaria:hover{
+    color: white;
+    font-style: italic;
+    width: 120;
+    height: 23px;
+    box-sizing: content-box;
+}
+
+
+.h3secundaria:hover{
+    color: white;
+    width: 120;
+    height: 23px;
+    box-sizing: content-box;
+}
+
+.h3complementar:hover{
+    color: white;
+    font-style: italic;
+    width: 290px;
+    height: 23px;
+    box-sizing: content-box;
+}
+
+
+.h3escura:hover{
+    color: white;
+    width: 120;
+    height: 23px;
+    box-sizing: content-box;
+}
+
+.h3clara:hover{
+    font-style: italic;
+    color: white;
+    width: 120;
+    height: 23px;
+    box-sizing: content-box;
+}
+
+.primaria:hover{
+    background-color: blue;
+    text-align: center;
+    width: 150px;
+    height: 23px;
+    border: 5px solid blue;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.secundaria:hover{
+    background-color: cyan;
+    text-align: center;
+    width: 180px;
+    height: 23px;
+    border: 5px solid cyan;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.complementar:hover{
+    background-color: green;
+    text-align: center;
+    width: 300px;
+    height: 23px;
+    border: 5px solid green;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.escura:hover{
+    background-color: red;
+    text-align: center;
+    width: 130px;
+    height: 23px;
+    border: 5px solid red;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.clara:hover{
+    background-color: orange;
+    text-align: center;
+    width: 110px;
+    height: 23px;
+    border: 5px solid orange;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+

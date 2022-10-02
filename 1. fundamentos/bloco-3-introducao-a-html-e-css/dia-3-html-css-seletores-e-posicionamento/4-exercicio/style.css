@@ -1,0 +1,69 @@
+.lista-ordenada{
+    background-color: yellow;
+}
+
+.par{
+    color: green;
+}
+
+.impar{
+    text-transform:uppercase;
+}
+
+.titulo{
+    color: red;
+}
+
+.italico{
+    width: 850px;
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li{
+    font-size: 20px;
+}
+
+.primeiro{
+    color: blue;
+}
+
+.java{
+    width: 45px;
+    background-color: pink;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.stackoverflow:hover{
+    width: 160px;
+    color: orange;
+    font-weight: bold;
+}
+
+.w3schools:hover{
+    width: 160px;
+    color: green;
+    font-weight: bold;
+}
+
+.mdnwebdocs:hover{
+    width: 200px;
+    color: black;
+    font-weight: bold;
+}
+
+.devdocs:hover{
+    width: 160px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.trybe:hover{
+    width: 160px;
+    color: green;
+    font-weight: bold;
+}
