@@ -77,12 +77,12 @@ function days() {
 	buttom2.id = 'btn-friday'
 	document.getElementsByClassName('buttons-container')[0].appendChild(buttom2)
 	// Implementando a função de alterar nome nas sextas-feiras.
-
+	let cont2 = 0;
 	buttom2.addEventListener('click', function (){
-		if (cont === 0) {
+		if (cont2 === 0) {
 			for (i = 0; i < document.getElementsByClassName('friday').length; i += 1) {
 				document.getElementsByClassName('friday')[i].innerText = 'SEXTOUUU!!'
-				cont += 1
+				cont2 += 1
 			}
 		}
 		else {
@@ -91,9 +91,24 @@ function days() {
 					document.getElementsByClassName('day')[i+1].innerText = i;
 				}
 			}
-			cont = 0;
+			cont2 = 0;
 		}
 	})
+	// Função para dar zoom.
+
+	// Tentativa numero 1:
+	for (index = 0; index < document.getElementsByClassName('day').length; index += 1) {
+		document.getElementsByClassName('day')[index].addEventListener('mouseover', function() {
+			document.getElementsByClassName('day')[index].style.fontSize = '50px';
+		})
+	}
+
+	// Tentativa numero 2:
+	// i = 6;
+	// document.getElementsByClassName('day')[i].style.fontSize = '50px';	
+
+	
+	
 }
 
 
