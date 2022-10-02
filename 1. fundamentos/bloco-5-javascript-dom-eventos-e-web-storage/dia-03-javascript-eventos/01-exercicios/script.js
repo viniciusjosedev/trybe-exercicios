@@ -45,19 +45,21 @@ function days() {
 		}
 	
 	}
+
 	// Implementando botões.
 	let buttom = document.createElement('button') 
 	buttom.innerText = 'Feriados'
 	buttom.className = 'Feriados'
 	buttom.id = 'btn-holiday'
 	document.getElementsByClassName("buttons-container")[0].appendChild(buttom)
-	
+
+	// Implementando a função de troca de cor.
 	document.getElementById('btn-holiday').addEventListener('click', alteraCor)
 	let cont = 0;
 	function alteraCor() {
 	if (cont === 0) {
 		for (i = 0; i < document.getElementsByClassName('holiday').length; i += 1) {
-			document.getElementsByClassName('holiday')[i].style.backgroundColor = 'green';
+			document.getElementsByClassName('holiday')[i].style.backgroundColor = 'black';
 			cont += 1;
 		}
 	}	
@@ -68,10 +70,15 @@ function days() {
 		}
 		
 	}
-}
+	}
+	// Implementando outro botão.
+	let teste = document.createElement('button')
+	teste.innerText = 'Sexta-feira'
+	teste.id = 'btn-friday'
+	document.getElementsByClassName('buttons-container')[0].appendChild(teste)
+
 }
 
-// Função que muda a cor.
 
 
 
