@@ -72,11 +72,28 @@ function days() {
 	}
 	}
 	// Implementando outro botão.
-	let teste = document.createElement('button')
-	teste.innerText = 'Sexta-feira'
-	teste.id = 'btn-friday'
-	document.getElementsByClassName('buttons-container')[0].appendChild(teste)
+	let buttom2 = document.createElement('button')
+	buttom2.innerText = 'Sexta-feira'
+	buttom2.id = 'btn-friday'
+	document.getElementsByClassName('buttons-container')[0].appendChild(buttom2)
+	// Implementando a função de alterar nome nas sextas-feiras.
 
+	buttom2.addEventListener('click', function (){
+		if (cont === 0) {
+			for (i = 0; i < document.getElementsByClassName('friday').length; i += 1) {
+				document.getElementsByClassName('friday')[i].innerText = 'SEXTOUUU!!'
+				cont += 1
+			}
+		}
+		else {
+			for (i = 0; i < document.getElementsByClassName('day').length; i += 1) {
+				if (i == parseInt('4') || i == parseInt('11') || i == parseInt('18') || i == parseInt('25')) {
+					document.getElementsByClassName('day')[i+1].innerText = i;
+				}
+			}
+			cont = 0;
+		}
+	})
 }
 
 
