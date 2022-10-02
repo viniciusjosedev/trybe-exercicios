@@ -51,7 +51,35 @@ function days() {
 	buttom.className = 'Feriados'
 	buttom.id = 'btn-holiday'
 	document.getElementsByClassName("buttons-container")[0].appendChild(buttom)
+	
+	document.getElementById('btn-holiday').addEventListener('click', alteraCor)
+	let cont = 0;
+	function alteraCor() {
+	if (cont === 0) {
+		for (i = 0; i < document.getElementsByClassName('holiday').length; i += 1) {
+			document.getElementsByClassName('holiday')[i].style.backgroundColor = 'green';
+			cont += 1;
+		}
+	}	
+	else {
+		for (i = 0; i < document.getElementsByClassName('holiday').length; i += 1) {
+			document.getElementsByClassName('holiday')[i].style.backgroundColor = 'rgb(238,238,238)';
+			cont = 0;
+		}
+		
+	}
 }
+}
+
+// Função que muda a cor.
+
+
+
+
+
+
+
+
 
 
 
