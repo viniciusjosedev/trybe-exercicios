@@ -156,14 +156,32 @@ function days() {
 	document.getElementsByClassName('task')[0].addEventListener('click', alteraElemento)
 
 	// Função bonus
-
+	let check = '';
+	let pTag = ''
 	document.getElementById('task-input').addEventListener('keyup', function(event) {
-		let divTag2 = document.createElement('div')
-		if ()
-			divTag2.innerText = event.target.value
-		document.getElementsByClassName('input-container')[0].appendChild(divTag2)
+		check = event.target.value
+		if (event.key === 'Enter'){
+			pTag = document.createElement('div')
+			pTag.innerText = event.target.value;
+			document.getElementsByClassName('input-container')[0].appendChild(pTag)
+			document.getElementById('task-input').value = ""
+		}
+
+		
 	})
 
+	document.getElementById('btn-add').addEventListener('click', function() {
+		console.log(check)
+		if (check.length > 0) {
+			pTag = document.createElement('div')
+			pTag.innerText = check
+			document.getElementsByClassName('input-container')[0].appendChild(pTag)
+			document.getElementById('task-input').value = ""
+		}
+		else {
+			alert('O campo de compromisso está vazio!')
+		}
+	})
 
 	
 }
