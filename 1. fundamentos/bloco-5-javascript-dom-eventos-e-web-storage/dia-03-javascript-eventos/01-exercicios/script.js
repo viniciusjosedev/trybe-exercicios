@@ -97,17 +97,31 @@ function days() {
 	// Função para dar zoom.
 
 	// Tentativa numero 1:
-	for (index = 0; index < document.getElementsByClassName('day').length; index += 1) {
-		document.getElementsByClassName('day')[index].addEventListener('mouseover', function() {
-			document.getElementsByClassName('day')[index].style.fontSize = '50px';
-		})
-	}
+	let index = 0;
+	document.getElementsByClassName('day').addEventListener('mouseover', function(){
+		console.log('oi')
+	})
+
+
+
+	// 	})
+	// }
 
 	// Tentativa numero 2:
 	// i = 6;
 	// document.getElementsByClassName('day')[i].style.fontSize = '50px';	
 
-	
+	// document.getElementsByClassName('day')[0].addEventListener('mouseover', function() {
+	// 	document.getElementsByClassName('day')[0].style.fontSize = '50px';
+	// })
+
+	// function day(nome) {
+	// 	for (index = 0; index < document.getElementsByClassName('day').length; index += 1) {
+			
+	// 	}
+	// }
+
+
 	
 }
 
