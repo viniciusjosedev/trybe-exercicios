@@ -94,32 +94,75 @@ function days() {
 			cont2 = 0;
 		}
 	})
-	// Função para dar zoom.
-
-	// Tentativa numero 1:
+	// Função para dar e tirar zoom.
 	let index = 0;
-	document.getElementsByClassName('day').addEventListener('mouseover', function(){
-		console.log('oi')
-	})
+	for (i = 0; i < document.getElementsByClassName('day').length; i += 1) {
+		index = i;
+		document.getElementsByClassName('day')[index].addEventListener('mouseover', function(evento){
+			evento.target.style.fontSize = '28px'
+		})
+	}
 
+	index = 0
+	for (i = 0; i < document.getElementsByClassName('day').length; i += 1) {
+		index = i
+		document.getElementsByClassName('day')[index].addEventListener('mouseout', function(evento) {
+			evento.target.style.fontSize = '20px'
+		})
+	}
+	// Função personalizada
+	function personalizada(nome) {
+		spanTag = document.createElement('span')
+		spanTag.innerText = nome;
+		document.getElementsByClassName("my-tasks")[0].appendChild(spanTag)
+	}
+	personalizada('cozinhar')
+	// cor para a tarefa.
+	function corTarefa(cor) {
+	divTag = document.createElement('div') 
+	divTag.className = 'task';
+	divTag.style.backgroundColor = cor	;
+	document.getElementsByClassName('my-tasks')[0].appendChild(divTag)
+	}
+	corTarefa('red')
 
+	// função para selecionar tarefa && função para alterar cor do dia do calendario.
 
-	// 	})
-	// }
-
-	// Tentativa numero 2:
-	// i = 6;
-	// document.getElementsByClassName('day')[i].style.fontSize = '50px';	
-
-	// document.getElementsByClassName('day')[0].addEventListener('mouseover', function() {
-	// 	document.getElementsByClassName('day')[0].style.fontSize = '50px';
-	// })
-
-	// function day(nome) {
-	// 	for (index = 0; index < document.getElementsByClassName('day').length; index += 1) {
+	let cont3 = 0
+	function alteraElemento() {
+		if (cont3 === 0) {
+			document.getElementsByClassName('task')[0].className += ' selected';
+			index2 = 0;
+				for (i = 0; i < document.getElementsByClassName('day').length; i += 1) {
+					index2 = i
+					document.getElementsByClassName('day')[index2].addEventListener('click', function (event){
+						event.target.style.color = document.getElementsByClassName('task')[0].style.backgroundColor;
+					})
+				}
 			
-	// 	}
-	// }
+			cont3 += 1
+		}
+		else {
+			document.getElementsByClassName('task')[0].className = 'task';
+			for (i = 0; i < document.getElementsByClassName('day').length; i += 1) {
+				index2 = i;
+				document.getElementsByClassName('day')[index2].addEventListener('click', function (event){
+					event.target.style.color = 'rgb(119,119,119)';
+				})
+			}
+		cont3 = 0
+		}
+	}
+	document.getElementsByClassName('task')[0].addEventListener('click', alteraElemento)
+
+	// Função bonus
+
+	document.getElementById('task-input').addEventListener('keyup', function(event) {
+		let divTag2 = document.createElement('div')
+		if ()
+			divTag2.innerText = event.target.value
+		document.getElementsByClassName('input-container')[0].appendChild(divTag2)
+	})
 
 
 	
