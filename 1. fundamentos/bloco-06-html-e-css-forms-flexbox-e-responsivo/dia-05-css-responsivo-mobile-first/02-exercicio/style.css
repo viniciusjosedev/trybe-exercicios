@@ -1,0 +1,435 @@
+/* mobile size */
+@media screen and (max-width: 400px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		height: auto;
+		background-color: red;
+	}
+	
+	header {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background-color: blue;
+	}
+	
+	header nav {
+		display: flex;
+		/* flex-direction: row; */
+		width: 100%;
+		background-color: aqua;
+	}
+	
+	header nav ul {
+		display: flex;
+		list-style: none;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: white;
+		width: 80%;
+	}
+	
+	header nav ul li {
+		margin: 0px;
+	}
+
+	
+	body {
+		box-sizing: border-box;
+	}
+	
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		height: auto;
+		background-color: red;
+	}
+	
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		background-color: green;
+	}
+
+	header p {
+		height: 100%;
+		font-size: 25px;
+		color: white;
+		font-weight: bolder;
+	}
+	
+	header nav {
+		display: flex;
+		width: 100%;
+		background-color: white;
+	}
+	
+	header nav ul {
+		display: flex;
+		list-style: none;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 83%;
+	}
+	
+	header nav ul li {
+		margin: 0px;
+	}
+
+	.aside-one {
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		background-color: green;
+	}
+
+	.aside-one h2 {
+		background-color: white;
+		text-align: center;
+	}
+
+	.aside-one ul {
+		display: flex;
+		flex-direction: column;
+		list-style: decimal;
+		color: white;
+		align-items: start;
+		align-self: center;
+		font-weight: bold;
+	}
+
+	.aside-two {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		text-align: center;
+	}
+
+	.aside-two h2 {
+		background-color: green;
+		/* font-size: 25px; */
+	}
+
+	.aside-two ul {
+		display: flex;
+		flex-direction: column;
+		list-style: circle;
+		align-items: baseline;
+		align-self: center;
+	}
+
+	.main-content {
+		display: flex;
+		flex-direction: column;
+		background-color: green;
+	}
+
+	.main-content h1 {
+		background-color: white;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.main-content p {
+		color: white;
+		font-weight: bolder;
+		text-align: justify;
+		width: 90%;
+		align-self: center;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+	}
+
+	footer h3 {
+		background-color: green;	
+		text-align: center;
+	}
+
+	footer p {
+		text-align: justify;
+		width: 90%;
+		align-self: center;
+		margin-top: -5px	;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 820px) {
+	
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		height: auto;
+		background-color: red;
+	}
+	
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		background-color: green;
+	}
+
+	header p {
+		height: 100%;
+		font-size: 25px;
+		color: white;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+	
+	header nav {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		background-color: white;
+	}
+	
+	header nav ul {
+		display: flex;
+		list-style: none;
+		flex-direction: row;
+		justify-content: space-around;
+		align-self: center;
+		width: 100%;
+	}
+
+	header nav ul li {
+		font-size: 20px;
+	}
+	
+	.aside-one {
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		background-color: green;
+	}
+
+	.aside-one h2 {
+		background-color: white;
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.aside-one ul {
+		display: flex;
+		flex-direction: column;
+		list-style: decimal;
+		color: white;
+		align-items: start;
+		align-self: center;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.aside-two {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		text-align: center;
+	}
+
+	.aside-two h2 {
+		background-color: green;
+		font-size: 30px;
+	}
+
+	.aside-two ul {
+		display: flex;
+		flex-direction: column;
+		list-style: circle;
+		align-items: baseline;
+		align-self: center;
+		font-size: 20px;
+	}
+
+	.main-content {
+		display: flex;
+		flex-direction: column;
+		background-color: green;
+	}
+
+	.main-content h1 {
+		background-color: white;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.main-content p {
+		color: white;
+		font-weight: bolder;
+		text-align: justify;
+		width: 90%;
+		align-self: center;
+		font-size: 25px;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+	}
+
+	footer h3 {
+		background-color: green;	
+		text-align: center;
+		font-size: 25px;
+	}
+
+	footer p {
+		text-align: justify;
+		width: 90%;
+		align-self: center;
+		margin-top: -5px	;
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 821px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		height: auto;
+		background-color: red;
+	}
+	
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		background-color: green;
+	}
+
+	header p {
+		height: 100%;
+		font-size: 25px;
+		color: white;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+	
+	header nav {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		background-color: white;
+	}
+	
+	header nav ul {
+		display: flex;
+		list-style: none;
+		flex-direction: row;
+		justify-content: space-around;
+		align-self: center;
+		width: 100%;
+	}
+
+	header nav ul li {
+		font-size: 20px;
+	}
+	
+	.aside-one {
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		background-color: green;
+	}
+
+	.aside-one h2 {
+		background-color: white;
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.aside-one ul {
+		display: flex;
+		flex-direction: column;
+		list-style: decimal;
+		color: white;
+		align-items: start;
+		align-self: center;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.aside-two {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		text-align: center;
+	}
+
+	.aside-two h2 {
+		background-color: green;
+		font-size: 30px;
+	}
+
+	.aside-two ul {
+		display: flex;
+		flex-direction: column;
+		list-style: circle;
+		align-items: baseline;
+		align-self: center;
+		font-size: 20px;
+	}
+
+	.main-content {
+		display: flex;
+		flex-direction: column;
+		background-color: green;
+	}
+
+	.main-content h1 {
+		background-color: white;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.main-content p {
+		color: white;
+		font-weight: bolder;
+		text-align: justify;
+		width: 90%;
+		align-self: center;
+		font-size: 25px;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+	}
+
+	footer h3 {
+		background-color: green;	
+		text-align: center;
+		font-size: 25px;
+	}
+
+	footer p {
+		text-align: justify;
+		width: 90%;
+		align-self: center;
+		margin-top: -5px	;
+		font-size: 20px;
+	}
+}
+
+
+
+
