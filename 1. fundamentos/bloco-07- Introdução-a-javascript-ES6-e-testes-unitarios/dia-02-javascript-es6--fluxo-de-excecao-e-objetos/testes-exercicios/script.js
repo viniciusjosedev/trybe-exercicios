@@ -71,23 +71,37 @@
 //   job: 'Teacher',
 // };
 
-const customer1 = {
-  firstName: 'Roberto',
-  age: 22,
-  job: 'Teacher',
-};
+// const customer1 = {
+//   firstName: 'Roberto',
+//   age: 22,
+//   job: 'Teacher',
+// };
 
-console.log(customer1);
+// console.log(customer1);
 
-customer1.lastName = 'Faria';
-console.log(customer1);
+// customer1.lastName = 'Faria';
+// console.log(customer1);
 
-const customer2 = {
-  firstName: 'Maria',
-  age: 23,
-  job: 'Medic',
-};
+// const customer2 = {
+//   firstName: 'Maria',
+//   age: 23,
+//   job: 'Medic',
+// };
 
-console.log(customer2);
-customer2['lastName'] = 'Silva';
-console.log(customer2);
+// console.log(customer2);
+// customer2['lastName'] = 'Silva';
+// console.log(customer2);
+
+// A função recebe um número qualquer de parâmetros. Todos são agregados como valores para adicionar ao objeto de destino!
+
+// Object.assign(destino, objeto1);
+// Object.assign(destino, objeto1, objeto2);
+// Object.assign(destino, objeto1, objeto2, objeto3, objeto4);
+
+// const dicionario = {
+// 	'oi': 12
+// }
+// console.log(dicionario.oi)
+// console.log(Object.entries(dicionario)
+
+
