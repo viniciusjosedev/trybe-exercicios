@@ -16,5 +16,4 @@ describe("A função myFizzBuzz(num) recebe um número num e retorna 'fizzbuzz' 
 	it('Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado', () => {
 		expect(myFizzBuzz('1')).toEqual(false)
 	})
-	
 })
