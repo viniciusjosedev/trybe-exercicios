@@ -1,15 +1,17 @@
-const books = require('./books.js')
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
 
-// Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+const expectedResult = 20;
 
-const expectedResult = 43;
+function func(acc, cur) {
+	return acc + cur.toLowerCase().split('a').length - 1
+}
 
-function averageAge() {
-	return books.reduce((acc, cur, index) => {
-		let resultado = acc + (cur.releaseYear - cur.author.birthYear);
-		return (index === 5) ? resultado / 6 : resultado;
-		
-	}, 0);
-};
+function containsA() {
+	return names.reduce(func, 0)
+}
 
-console.log(averageAge() === expectedResult)
+console.log(containsA())

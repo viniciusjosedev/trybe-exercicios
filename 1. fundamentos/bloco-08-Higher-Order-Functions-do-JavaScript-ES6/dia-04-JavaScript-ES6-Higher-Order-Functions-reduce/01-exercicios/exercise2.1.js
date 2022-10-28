@@ -1,4 +1,4 @@
-const books = require('./books.js')
+const books = require('./books.exercise2')
 
 // Crie uma string com os nomes de todas as pessoas autoras.
 
