@@ -1,9 +1,12 @@
 import { nanoid } from 'nanoid'
 
+import './style.css'
+
+import copy from 'clipboard-copy'
+
 document.getElementsByTagName('button')[0].addEventListener('click', () => {
-	document.getElementsByTagName('h2')[0].innerText = nanoid();
+  const id = nanoid()
+	document.getElementsByTagName('h2')[0].innerText = id;
+  copy (id)
+	document.getElementsByTagName('h2')[1].innerText = 'texto copiado!'	
 })
-
-function teste() {return 'a'};
-
-module.exports = teste;
