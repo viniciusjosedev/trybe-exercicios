@@ -8,7 +8,7 @@
     "test": "jest",
     "lint": "eslint ./src",
     "build": "vite build",
-		"post": "surge dist"
+		"post": "surge dist	"
   },
   "keywords": [],
   "author": "",
