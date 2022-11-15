@@ -9,4 +9,11 @@ document.getElementsByTagName('button')[0].addEventListener('click', () => {
 	document.getElementsByTagName('h2')[0].innerText = id;
   copy (id)
 	document.getElementsByTagName('h2')[1].innerText = 'texto copiado!'	
+  time()
 })
+
+function time() {
+	setTimeout(() => {
+  document.getElementsByTagName('h2')[1].innerText = '';
+}, 1500)
+}
