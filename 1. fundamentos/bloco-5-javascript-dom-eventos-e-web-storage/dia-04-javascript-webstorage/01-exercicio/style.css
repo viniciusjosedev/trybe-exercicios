@@ -1,0 +1,28 @@
+* {
+	margin: 0px;
+	text-align: center;
+}
+
+.main {
+	text-align: center;
+	margin-top: 20px;
+}
+.conteudo {
+	width: 700px;
+	margin-left: 300px;
+	margin-bottom: 20px;
+}
+
+p {
+	text-align: justify;
+	line-height: 1.6;
+	/* font-family: ; */
+}
+
+/* .inputs{
+	width: 1px;
+} */
+
+.input {
+	margin-left: 10px;
+}

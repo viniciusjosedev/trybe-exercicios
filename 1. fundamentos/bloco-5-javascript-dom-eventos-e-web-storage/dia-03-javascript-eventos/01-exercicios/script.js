@@ -94,20 +94,95 @@ function days() {
 			cont2 = 0;
 		}
 	})
-	// Função para dar zoom.
-
-	// Tentativa numero 1:
-	for (index = 0; index < document.getElementsByClassName('day').length; index += 1) {
-		document.getElementsByClassName('day')[index].addEventListener('mouseover', function() {
-			document.getElementsByClassName('day')[index].style.fontSize = '50px';
+	// Função para dar e tirar zoom.
+	let index = 0;
+	for (i = 0; i < document.getElementsByClassName('day').length; i += 1) {
+		index = i;
+		document.getElementsByClassName('day')[index].addEventListener('mouseover', function(evento){
+			evento.target.style.fontSize = '28px'
 		})
 	}
 
-	// Tentativa numero 2:
-	// i = 6;
-	// document.getElementsByClassName('day')[i].style.fontSize = '50px';	
+	index = 0
+	for (i = 0; i < document.getElementsByClassName('day').length; i += 1) {
+		index = i
+		document.getElementsByClassName('day')[index].addEventListener('mouseout', function(evento) {
+			evento.target.style.fontSize = '20px'
+		})
+	}
+	// Função personalizada
+	function personalizada(nome) {
+		spanTag = document.createElement('span')
+		spanTag.innerText = nome;
+		document.getElementsByClassName("my-tasks")[0].appendChild(spanTag)
+	}
+	personalizada('cozinhar')
+	// cor para a tarefa.
+	function corTarefa(cor) {
+	divTag = document.createElement('div') 
+	divTag.className = 'task';
+	divTag.style.backgroundColor = cor	;
+	document.getElementsByClassName('my-tasks')[0].appendChild(divTag)
+	}
+	corTarefa('red')
 
-	
+	// função para selecionar tarefa && função para alterar cor do dia do calendario.
+
+	let cont3 = 0
+	function alteraElemento() {
+		if (cont3 === 0) {
+			document.getElementsByClassName('task')[0].className += ' selected';
+			index2 = 0;
+				for (i = 0; i < document.getElementsByClassName('day').length; i += 1) {
+					index2 = i
+					document.getElementsByClassName('day')[index2].addEventListener('click', function (event){
+						event.target.style.color = document.getElementsByClassName('task')[0].style.backgroundColor;
+					})
+				}
+			
+			cont3 += 1
+		}
+		else {
+			document.getElementsByClassName('task')[0].className = 'task';
+			for (i = 0; i < document.getElementsByClassName('day').length; i += 1) {
+				index2 = i;
+				document.getElementsByClassName('day')[index2].addEventListener('click', function (event){
+					event.target.style.color = 'rgb(119,119,119)';
+				})
+			}
+		cont3 = 0
+		}
+	}
+	document.getElementsByClassName('task')[0].addEventListener('click', alteraElemento)
+
+	// Função bonus
+	let check = '';
+	let pTag = ''
+	document.getElementById('task-input').addEventListener('keyup', function(event) {
+		check = event.target.value
+		if (event.key === 'Enter'){
+			pTag = document.createElement('div')
+			pTag.innerText = event.target.value;
+			document.getElementsByClassName('input-container')[0].appendChild(pTag)
+			document.getElementById('task-input').value = ""
+		}
+
+		
+	})
+
+	document.getElementById('btn-add').addEventListener('click', function() {
+		console.log(check)
+		if (check.length > 0) {
+			pTag = document.createElement('div')
+			pTag.innerText = check
+			document.getElementsByClassName('input-container')[0].appendChild(pTag)
+			document.getElementById('task-input').value = ""
+		}
+		else {
+			alert('O campo de compromisso está vazio!')
+		}
+	})
+
 	
 }
 

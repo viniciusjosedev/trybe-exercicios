@@ -1,0 +1,46 @@
+body {
+	background-color: #505050;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div {
+	background-color: #222222;
+	width: 480px;
+	color: white;
+	font-weight: bolder;
+}
+
+button {
+	text-decoration: none;
+	cursor: pointer;
+	background-color: pink;
+	font-size: 15px;
+	border: 0 none;
+	padding: 10px;
+}
+
+button:hover {
+	font-size: 20px;
+}
+
+h2 {
+	color: pink;
+}
+
+#mensagem {
+	color:white;
+}
+
+
+
