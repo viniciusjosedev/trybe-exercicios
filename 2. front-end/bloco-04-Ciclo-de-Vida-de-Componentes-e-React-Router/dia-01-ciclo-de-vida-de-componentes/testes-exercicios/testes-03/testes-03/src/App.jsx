@@ -18,13 +18,7 @@ class App extends React.Component {
 			.then(data => this.setState({
 				dados: data,
 			}))
-		})
-		// fetch('https://api.randomuser.me/')
-		// .then(result => result.json())
-		// .then(data => this.setState({
-		// 	dados: data,
-		// 	loading: true,
-		// }))
+		})		
 	}
 
 	componentDidMount = () => {
