@@ -16,12 +16,12 @@ class App extends React.Component {
     this.fetchJoke();
    }
    
-   fetchJoke() {
+   fetchJoke = () => {
     const API_URL = 'https://icanhazdadjoke.com/';
     const REQUEST_CONFIG = { headers: { Accept: 'application/json' } };
     fetch(API_URL, REQUEST_CONFIG)
       .then((response) => response.json())
-      .then((data) => this.setState({ joke: data.joke }));
+      .then(({ joke }) => this.setState({ joke }));
   }
 
   render() {
@@ -30,6 +30,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <p>{joke}</p>
+				<button type="button" onClick={ () => this.fetchJoke() }>New Joke</button>
       </div>
     );
   }
