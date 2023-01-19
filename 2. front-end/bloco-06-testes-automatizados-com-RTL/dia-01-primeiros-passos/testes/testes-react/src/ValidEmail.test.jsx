@@ -20,7 +20,17 @@ describe('testes do email', () => {
 
 	it('Verifica se nao existe texto antes do email ser enviado', () => {
 		render(<App />)
-		const teste = screen.getByTestId('id-email-user');
+		// const emailImpresso = screen.getByTestId('id-email-user');
+		expect(screen.queryByText('Email Válido')).toBeNull();
+		expect(screen.queryByText('Email Inválido')).toBeNull();
 	});
+
+	it('Verifica se a cor do texto muda caso o email seja valido e invalido', () => {
+		render(<ValidEmail email="viniciusJose@gmail.com" />)
+		expect(screen.getByText('Email Válido').style.color).toBe('green')
+
+		render(<ValidEmail email="aaa" />)
+		expect(screen.getByText('Email Inválido').style.color).toBe('red')
+	})
 
 })

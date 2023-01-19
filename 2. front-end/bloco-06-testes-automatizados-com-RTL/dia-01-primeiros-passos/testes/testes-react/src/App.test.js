@@ -33,6 +33,7 @@ describe('Testes iniciais', () => {
 
 		expect(emailInput).toHaveValue('');
 		expect(screen.getByTestId('id-email-user')).toHaveTextContent('Valor: ' + email)
+		
 	});
 
 
