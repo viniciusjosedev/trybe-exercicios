@@ -1,0 +1,32 @@
+version: '3'
+services:
+  wd:
+    image: wordpress:php8.0
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    restart: always
+    depends_on:
+      - db
+    networks:
+      - rede-teste
+  db:
+    image: mysql:5.7.40
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    volumes:
+      - ./db_data:/db_data
+    networks:
+      - rede-teste
+volumes:
+  db_data:
+networks:
+  rede-teste:
