@@ -1,0 +1,16 @@
+version: '3'
+services:
+  frontend:
+    image: ghost:1-alpine
+    ports: 
+      - 2368:2368
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7.40
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - database__client=mysql
+      - database__connection__user=root
+      - database__connection__password=root
+      - database__connection__database=ghost
