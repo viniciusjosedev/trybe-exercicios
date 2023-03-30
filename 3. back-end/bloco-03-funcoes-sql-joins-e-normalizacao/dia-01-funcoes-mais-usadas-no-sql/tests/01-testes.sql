@@ -103,5 +103,51 @@ SELECT * FROM sakila.film;
 SELECT AVG(length) AS 'Média de Duração', MIN(length) AS 'Duração Mínima',
  MAX(length) AS 'Duração Máxima', SUM(length) AS 'Tempo de Exibição Total',
  COUNT(film_id) AS 'Filmes Registrados' FROM sakila.film;
-
  
+ SELECT first_name FROM sakila.actor
+GROUP BY first_name;
+
+SELECT first_name, COUNT(*) FROM sakila.actor
+GROUP BY first_name;
+
+SELECT rating, rental_rate, COUNT(1) as total FROM sakila.film
+GROUP BY rating, rental_rate 
+ORDER BY rating, rental_rate;
+
+
+SELECT IF(active = 0, 'Inativo', 'Ativo'), COUNT(*) FROM sakila.customer GROUP BY active;
+
+SELECT * FROM sakila.customer;
+
+SELECT store_id, active, IF(active = 0, 'Inativo', 'Ativo'), COUNT(*) FROM sakila.customer GROUP BY store_id, active;
+
+SELECT * FROM sakila.film;
+
+SELECT rating, ROUND(AVG(rental_duration)) AS MÉDIA FROM sakila.film GROUP BY rating;
+
+SET sql_mode=only_full_group_by;
+SELECT district, COUNT(*) AS Quantidade FROM sakila.address GROUP BY district ORDER BY Quantidade DESC;
+
+SELECT DISTINCT(district), COUNT(*) FROM sakila.address;
+
+SELECT first_name, COUNT(*) AS 'nomes cadastrados'
+FROM sakila.actor
+GROUP BY first_name
+HAVING `nomes cadastrados` > 2;
+
+SELECT rating, rental_rate, COUNT(1) as total FROM sakila.film
+GROUP BY rental_rate, rating
+HAVING total < 70
+ORDER BY rating, rental_rate;
+
+SELECT rating, AVG(length) AS 'Duração média'
+FROM sakila.film
+GROUP BY rating
+HAVING `Duração média` > 115.00
+AND `Duração média` <= 121.50 ;
+
+SELECT rating, SUM(replacement_cost) AS Soma
+FROM sakila.film
+GROUP by rating
+HAVING Soma > 3950.50 ORDER BY Soma;
+
